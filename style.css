@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+nav{
+    background:#243D25;
+    height: 90px;
+    position: fixed;
+    width: 100%;
+}
+
+label{
+    line-height: 80px;
+    font-size: 30px;
+    color: white;
+    font-weight: 200;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+label img {
+    padding-top: 4px;
+ }
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    line-height: 80px;
+    margin: 0 10px;
+}
+
+nav ul li a{
+    color: #243D25;
+    font-size: 15px;
+    padding: 6px 15px;
+    background-color: white;
+    border-radius: 3px;
+}
+
+
+.side-menu{
+    position: fixed;
+    background:#243D25;
+    width: 250px;
+    height: 100%;
+    margin-top: 89px;
+}
+
+
+.side-menu center h2{
+    color: black;
+    font-size: 20px;
+}
+
+.side-menu a{
+    padding-left: 50px;
+    padding-top: 5px;
+    display: block;
+    align-items: center;
+    line-height: 60px;
+    transition: 0.5s;
+}
+
+.side-menu a:hover{
+    background:  #49854b;
+    padding-left: 20px;
+}
+
+.side-menu span{
+    font-size: 15px;
+    margin-left: 20px;
+    color: white;
+}
+
+
+
+.side-menu i{
+    font-size: 20px;
+    margin-left: 20px;
+    color: white;
+}
+
+nav .menu-bar{
+    float: right;
+    display: none;
+    padding-top: 3px;
+    color: white;
+    margin-right: 20px;
+}
+
+#menu{
+    display: none;
+}
+
+.side-menu .Logout{
+    display: none;
+}
+
+
+@media (max-width:966px){
+    nav ul{
+        display: none;
+    }
+
+    label img{
+    padding-top: 10px;
+    width: 125px;
+    height: 80px;
+    margin-left: -10px;
+    cursor: pointer;
+    }
+    .side-menu{
+        width: 100%;
+        left: 100%;
+        background: #49854b;
+        transition: all 0.5s;
+    }
+    .side-menu a i{
+        display: none;
+    }
+    .side-menu a span{
+        display: block;
+    }
+    .side-menu .Logout{
+        display: block;
+    }
+    nav .menu-bar{
+        display: block;
+    }
+    #menu:checked ~ .side-menu{
+        left: 0;
+    }
+}
+
+@media (min-width:227px){
+
+    .side-menu{
+        text-align: left;
+        transition: all 0.5s;
+    }
+
+}
